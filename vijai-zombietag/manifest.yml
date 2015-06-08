@@ -1,0 +1,8 @@
+  host: vijai-zombietag
+  disk: 1024M
+  name: vijai-zombietag
+  command: node app.js
+  path: .
+  domain: mybluemix.net
+  memory: 128M
+  instances: 1

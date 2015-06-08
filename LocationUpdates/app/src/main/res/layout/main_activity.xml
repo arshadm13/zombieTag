@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+     Copyright (C) 2014 Google, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific langua governing permissions and
+     limitations under the License.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/layout_padding"
+    android:background="#ff3c3c3c"
+    android:backgroundTint="#ff101010"
+    android:backgroundTintMode="screen">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/zombie2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignWithParentIfMissing="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/player_id_label"
+        android:id="@+id/player_id_label"
+        android:layout_marginTop="64dp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/player_state_label"
+        android:layout_alignStart="@+id/player_state_label"
+        android:textSize="@dimen/activity_vertical_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/player_state_label"
+        android:id="@+id/player_state_label"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_below="@+id/player_id_label"
+        android:layout_toLeftOf="@+id/player_state_text"
+        android:layout_toStartOf="@+id/player_state_text"
+        android:textSize="@dimen/activity_vertical_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/player_id_text"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:layout_above="@+id/player_state_label"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:textColor="#ff8acdff"
+        android:textSize="@dimen/activity_vertical_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/player_state_text"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:layout_below="@+id/player_id_text"
+        android:layout_alignLeft="@+id/player_id_text"
+        android:layout_alignStart="@+id/player_id_text"
+        android:textColor="#ff8acdff"
+        android:textSize="@dimen/activity_vertical_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/latitude_label"
+        android:id="@+id/latitude_label"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_below="@+id/player_state_label"
+        android:layout_alignLeft="@+id/player_state_label"
+        android:layout_alignStart="@+id/player_state_label"
+        android:textSize="@dimen/activity_vertical_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/longitude_label"
+        android:id="@+id/longitude_label"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_below="@+id/latitude_label"
+        android:layout_alignLeft="@+id/latitude_label"
+        android:layout_alignStart="@+id/latitude_label"
+        android:textSize="@dimen/activity_vertical_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/latitude_text"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:layout_below="@+id/player_state_text"
+        android:layout_alignLeft="@+id/player_state_text"
+        android:layout_alignStart="@+id/player_state_text"
+        android:textColor="#ff8acdff"
+        android:textSize="@dimen/activity_vertical_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/longitude_text"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:layout_below="@+id/latitude_text"
+        android:layout_alignLeft="@+id/latitude_text"
+        android:layout_alignStart="@+id/latitude_text"
+        android:textColor="#ff8acdff"
+        android:textSize="@dimen/activity_vertical_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/zombies_created_label"
+        android:id="@+id/zombies_created_label"
+        android:layout_marginTop="34dp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textColor="#ffffd817"
+        android:layout_below="@+id/longitude_label"
+        android:layout_alignLeft="@+id/longitude_label"
+        android:layout_alignStart="@+id/longitude_label"
+        android:textSize="@dimen/activity_vertical_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/zombie_count_label"
+        android:id="@+id/zombie_count_label"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textColor="#ffffd817"
+        android:layout_below="@+id/zombies_created_label"
+        android:layout_alignLeft="@+id/zombies_created_label"
+        android:layout_alignStart="@+id/zombies_created_label"
+        android:textSize="@dimen/activity_vertical_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/human_count_label"
+        android:id="@+id/human_count_label"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textColor="#ffffd817"
+        android:layout_below="@+id/zombie_count_label"
+        android:layout_alignLeft="@+id/zombie_count_label"
+        android:layout_alignStart="@+id/zombie_count_label"
+        android:textSize="@dimen/activity_vertical_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/zombies_created_text"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:textColor="#ff8acdff"
+        android:layout_alignTop="@+id/zombies_created_label"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:textSize="@dimen/activity_vertical_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/zombie_count_text"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:textColor="#ff8acdff"
+        android:layout_above="@+id/human_count_text"
+        android:layout_alignLeft="@+id/human_count_text"
+        android:layout_alignStart="@+id/human_count_text"
+        android:textSize="@dimen/activity_vertical_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/human_count_text"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:textColor="#ff8acdff"
+        android:layout_alignBottom="@+id/human_count_label"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:textSize="@dimen/activity_vertical_margin" />
+
+</RelativeLayout>
